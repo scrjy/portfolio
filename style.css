@@ -1,0 +1,132 @@
+* {
+  /* 테두리 부분을 없애기 */
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-size: 16px; /*전체 글자 크기*/
+  line-height: 1.5;
+  color: #333; /*글자 색*/
+  background: rgb(68, 67, 67); /*배경색*/
+}
+
+ul {
+  list-style-type: none; /*상단 메뉴 앞 마커 모양 없애기*/
+}
+
+.container {
+  /*여백 설정*/
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.main {
+  color: rgb(255, 255, 255); /*Home, About, Contact 내용 색 바꾸기*/
+  line-height: 2.5;
+}
+
+.navbar {
+  /*상단바 색 및 범위(높이)*/
+  background-color: rgb(206, 177, 255);
+  color: #82ff86;
+  height: 60px;
+}
+
+.navbar .container {
+  /*상단바 목록 위치*/
+  display: flex;
+  flex-direction: row; /*열 형식*/
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.navbar ul {
+  /*상단바 Home About Contact 위치*/
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar ul li {
+  /*상단바 Home About Contact 간격*/
+  margin-left: 30px;
+}
+
+.navbar .logo {
+  /*WebDemo 글자*/
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.navbar a {
+  /*상단바 Home About Contact 크기*/
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  /*상단바 Home About Contact 마우스 올렸을 때*/
+  border-bottom: 2px #895500be solid; /*마우스 올렸을 때 밑줄*/
+  color: #b6ffb9; /*마우스 올렸을 때 색*/
+}
+
+button {
+  padding: 12px 20px;
+  margin: 10px 100px;
+  font-size: large;
+  font-weight: bold;
+  background-color: rgb(199, 215, 255);
+  border-radius: 10px; /* 버튼에 둥근 모서리 추가 */
+  cursor: pointer;
+}
+
+.button-row {
+  display: flex;
+  justify-content: center; /* 가로 방향 가운데 정렬 */
+  margin-bottom: -20px; /* 버튼 그룹 간 간격 */
+}
+
+/* 각 버튼들에 동일한 여백 적용 */
+.button-row a {
+  margin: 0 20px; /* 버튼 사이에 좌우 여백 추가 */
+}
+
+button:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 6, 175, 0.342);
+}
+
+a {
+  color: #ffffff; /* 기본 링크 색상 */
+  text-decoration: none; /* 링크 밑줄 없애기 */
+}
+
+a:hover {
+  color: #b6ffb9; /* 마우스를 올렸을 때 색상 */
+}
+
+a:active {
+  color: rgb(206, 177, 255); /* 클릭 중일 때 색상 */
+}
+
+img {
+  margin: 20px 0; /* 위 아래 여백 추가 */
+  display: block; /* 블록 요소로 만들어 가운데 정렬할 수 있도록 설정 */
+  margin-left: 230px;
+  margin-right: auto;
+  margin-top: -200px; /* 위쪽으로 20px 이동 */
+  border-radius: 20px; /* 버튼에 둥근 모서리 추가 */
+}
+
+.video {
+  position: absolute; /* 절대 위치 설정 */
+  top: 50px; /* 위쪽에서 20px 아래 */
+  right: 250px; /* 오른쪽에서 20px 떨어짐 */
+  width: 600px; /* 비디오 너비 설정 */
+  height: 450px; /* 비디오 높이 설정 */
+}
